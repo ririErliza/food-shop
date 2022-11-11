@@ -3,9 +3,9 @@ import Image from "next/image"
 
 const Featured = () => {
     const images=[
-        "/images/lele.png",
-        "/images/ikan.png",
-        "/images/ayamgoreng.png"
+        "/images/featured1.png",
+        "/images/featured2.png",
+        "/images/featured3.png"
     ]
   return (
     <div className={styles.container}>
@@ -16,7 +16,7 @@ const Featured = () => {
         <div className={styles.wrapper}>
             <div className={styles.imgContainer}>
                 {images.map((img, i)=>(
-                    <Image src={img} key={i} alt="" width="300" height="300" style={{borderRadius:120}} />
+                    <Image src={img} key={i} alt="" layout="fill" objectFit="contain"/>
 
                 ))}
 
